@@ -1,0 +1,97 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #4a9466; /* Cor do fundo */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   Título do Chat (centralizado)
+   ========================= */
+h2 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* =========================
+   Container do Chat (100% da tela)
+   ========================= */
+.chat-container {
+  background-color: #4a9466;
+  width: 100%;
+  height: calc(100vh - 4rem); /* Deixa espaço para o título */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* =========================
+   Área das mensagens
+   ========================= */
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente diferente */
+  border-radius: 10px;
+}
+
+/* As mensagens agora ficam sem caixas, apenas separadas */
+.chat-message {
+  display: block;
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Linha sutil para separar mensagens */
+}
+
+/* =========================
+   Área de entrada de texto e botão
+   ========================= */
+.chat-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaço entre o input e o botão */
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Caixa de entrada de texto */
+.chat-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Botão de Envio */
+.chat-button {
+  width: 100%;
+  background-color: #005bb5;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-button:hover {
+  background-color: #004999;
+}
